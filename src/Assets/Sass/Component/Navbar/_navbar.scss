@@ -1,0 +1,317 @@
+@import '../../Foundation/colors';
+
+// Navbar :
+
+.onScroll {
+  box-shadow: 0 1px 4px 0 $headerBorder-color; 
+}
+.navbar {
+    height: 110px;
+    width: 100%;
+    position: fixed !important;
+    display: flex;
+    direction: rtl;
+    top: 0;
+    left: 0;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: $white-color;
+    z-index: 1000001;
+    &-Content {
+      display: flex;
+    }
+  &-Navigation {
+    list-style: none;
+    display: flex;
+    align-items: unset;
+    height: 100%;
+    padding: 25px 0px 0px 6rem;
+    &-Items {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0px 26px;
+      & a {
+          color: $black-textColor;
+          text-decoration: none;
+          padding: 0;
+          border-bottom: 2px solid transparent;
+          box-sizing: border-box;
+          display: block;
+          &:hover,
+          &:active,
+          &.active {
+            border-bottom: 2px solid $blue-color;
+            color : $blue-color;  
+            padding-bottom: 17px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+          }
+          &.not-active{
+            padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &-Button {
+    width: 170px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: $cloudy-color;
+    border:none;
+    margin: 0 0 0 139px;
+    color: $blue-color;
+  }
+  &-Button-Separator {
+    display: none;
+  }
+  &-BurgerCross,
+  &-BurgerCrossDisable,
+  &-BurgerBars,
+  &-BurgerBarsDisable {
+    display: none;
+  }
+}
+
+  // Responsive Mode :
+
+  @media(min-width:1650px) and (max-width:2000px) {
+    
+    .navbar .logo {
+        padding: 0px 110px 34px 0px;
+    }
+    .navbar {
+      &-Button {
+        margin: 10px 13rem 40px 8rem;
+      }
+  }
+}
+
+ // ------------------------------------------- // 
+
+@media(min-width:1500px) and (max-width:1650px) {
+    
+  .navbar .logo {
+      padding: 0px 110px 34px 0px;
+  }
+  .navbar {
+    &-Button {
+      margin: 10px 7rem 40px 8rem;
+    }
+}
+}
+  
+  // ------------------------------------------- // 
+  
+  @media(min-width:1300px) and (max-width:1500px) {
+    
+    .navbar .logo {
+        padding: 0px 5rem 34px 0px;
+    }
+    .navbar {
+      &-Button {
+        margin: 10px 0px 40px 90px;
+      }
+    }
+  }
+  
+  // ------------------------------------------- // 
+  
+  @media(min-width:1150px) and (max-width:1300px) {
+  
+    .navbar .logo {
+        padding: 0px 4rem 34px 0px;
+    }
+    .navbar {
+      &-Navigation {
+        padding: 25px 0px 0px 7rem;
+        &-Items {
+          padding: 0px 15px;
+      }
+    }
+      &-Button {
+        margin: 10px 0px 40px 5rem;
+    }
+  }
+}
+
+ // ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+  
+  .navbar .logo {
+      padding: 0px 4rem 34px 0px;
+  }
+  .navbar {
+    &-Navigation {
+      padding: 25px 0px 0px 6rem;
+      &-Items {
+        padding: 0px 15px;
+    }
+  }
+    &-Button {
+      margin: 10px 0px 40px 3rem;
+  }
+}
+}
+   // ------------------------------------------- // 
+  
+  @media screen and (max-width: 1000px) {
+
+    .navbar {
+
+      &-Content {
+          position: absolute;
+          background-color: $white-color;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          margin-top: 8rem;
+          transform: translateX(-100%);
+          transition: 0.5s;
+          font-size: 1.2rem;
+          align-items: flex-end;
+          justify-content: flex-start;
+        &-Active {
+          transform: translateX(0%);
+        }
+      }
+      &-Navigation {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        width: 100%;
+        height: auto;
+        display: -ms-flexbox;
+        align-items: flex-start;
+        &-Items {
+          padding: 30px 2rem 2rem 0;
+          height: 30px;
+          & a {
+            color: $black-textColor;
+            vertical-align: middle;
+            margin-right: 1rem;
+            &:hover,
+            &:active,
+            &.active {
+              border-right: 4px solid $blue-color;
+              color: $blue-color;
+              padding-right: 0.7rem;
+              border-radius: 3px;
+              border-bottom: none;
+            }
+        }
+      }
+    }
+    &-Button {
+      margin: 0 3rem 0 auto;
+      display: block;
+      font-size: 1.2rem;
+      width: 11rem;
+      height: 3.5rem;
+    }
+    &-Button-Separator {
+      display: block;
+      width: 88%;
+      border : solid 0.5px $separator-color;
+      border-radius: 5px;
+      margin: 0 auto 3rem auto;
+    }
+    &-BurgerCross,
+    &-BurgerBars {
+      display: block;
+      cursor: pointer;
+      padding: 0px 0px 25px 38px;
+      font-size: 32px;
+      color: #1894ff;
+      transition: 0.3s;
+    }
+    &-BurgerBarsDisable,
+    &-BurgerCrossDisable {
+      display: none;
+      transition: 0.3s;
+    }
+  }
+}
+
+
+
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+  .navbar .logo {
+      padding: 5px 20px 34px 0px;
+  }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+  .navbar .logo {
+      padding: 5px 5px 34px 0px;
+  }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:280px) and (max-width:360px) {
+
+  .navbar .logo {
+      padding: 5px 5px 34px 0px;
+  }
+  .navbar {
+    &-Content {
+      font-size: 1rem;
+    }
+    &-Navigation {
+        padding: 15px 0px 0px 1rem;
+    }
+    &-BurgerCross,
+    &-BurgerBars {
+      padding: 0px 0px 25px 15px;
+    }
+  }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:280px) {
+
+  .navbar .logo {
+    padding: 0px 5px 34px 0px;
+  }
+  .navbar {
+    flex-flow: column;
+    flex-direction: column-reverse;
+    height: 200px;
+    align-items: baseline;
+    &-Content {
+      font-size: 1rem;
+      margin-top: 13rem;
+    }
+    &-Navigation {
+      padding: 15px 0px 0px 1rem;
+      &-Items {
+        padding: 1rem 0rem 2rem 0;
+    }
+    }
+    &-BurgerCross,
+    &-BurgerBars {
+      padding: 20px 5px 0px 5px;
+      margin-left: auto;
+    }
+    &-Button {
+      margin: 0 1rem 0 auto;
+    }
+  }
+}

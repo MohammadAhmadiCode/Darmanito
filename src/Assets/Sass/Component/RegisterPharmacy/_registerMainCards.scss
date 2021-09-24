@@ -1,0 +1,191 @@
+@import '../../Foundation/colors';
+
+// Register Main Cards :
+
+.registerMainCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    direction: rtl;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.1);
+    border-radius: 25px;
+    width: 438px;
+    height: 125px;
+    margin: 0 0 36px 66px;
+    padding: 11px 24px 25px 16px;
+    background-color: $white-color;
+    &-Name {
+        font-size: 20px;
+        font-weight: bold;
+        height: 27px;
+        padding: 29px 22px 35px 89px;
+    }
+    &-Image {
+        width: 75px;
+        height: 75px;
+    }
+    &-Address {
+        display: flex;
+        flex-direction: row;
+        &-Text {   
+            color: $gray-textColor;
+            width: 200px;
+            height: 16px;
+            margin: 0 0 20px 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        &-Icon {
+            color: $green-color;
+            width: 12px;
+            height: 17.1px;
+            margin: 1px 16px 0 15.8px;
+        }
+    }
+    &-Boarding {
+        font-size: 12px;
+        background-color: $blue-color;
+        border-radius: 10px;
+        color: $white-color;
+        align-self: flex-start;
+        width: 80px;
+        height: 28px;
+        padding: 6px 14px 5px 12px;
+    }
+
+}
+.registerMainCards-NotActive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    direction: rtl;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.1);
+    border-radius: 25px;
+    width: 306px;
+    height: 87px;
+    margin: 36px 66px 36px 132px;
+    padding: 16px 17px 17px 8px;
+    opacity: 0.5;
+    background-color: $white-color;
+    &-Name {
+        font-size: 13px;
+        font-weight: bold;
+        height: 17px;
+        margin: 0 10px 14px 0px;
+    }
+    &-Image {
+        width: 52px;
+        height: 53px;
+        margin: 0 0 0 11px;
+    }
+    &-Address {
+        display: flex;
+        flex-direction: row;
+        &-Text {   
+            color: $gray-textColor;
+            width: 140px;
+            height: 11px;
+            margin: 0 17.6px 2.6px 0;
+            font-size: 8px;
+            font-weight: normal;
+        }
+        &-Icon {
+            color: $green-color;
+            width: 8.4px;
+            height: 11.9px;
+            margin: 1px 2px 0 0px;
+        }
+    }
+    &-Boarding {
+        font-size: 8px;
+        background-color: $blue-color;
+        border-radius: 10px;
+        color: $white-color;
+        align-self: flex-start;
+        width: 55px;
+        height: 20px;
+        padding: 4px 9px 0px 1px;
+    }
+}
+.directionLeft {
+    margin: 36px 198px 0 0;
+}
+
+// REsponsive :
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .registerMainCards-NotActive {
+        display: none;
+    }
+    .registerMainCards  {
+        width: 293px;
+        height: 84px;
+        padding: 15px 16px 17px 11px;
+        margin: auto;
+        &-Image {
+            width: 50px;
+            height: 50px;
+            
+        }
+        &-Boarding {
+            width: 53px;
+            height: 18px;
+            font-size: 8px;
+            padding: 2.5px 9px 5px 1px;
+        }
+        &-Name {
+            font-size: 13px;
+            padding: 31px 13px 23px 0px;
+        }
+        &-Address {
+            &-Text {
+                font-size: 8px;
+                width: 143px;
+            }
+            &-Icon {
+                width: 8px;
+                height: 11.5px;
+                margin: 1px 4px 0 7px;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .registerMainCards-NotActive {
+        display: none;
+    }
+    .registerMainCards  {
+        width: 250px;
+        height: 84px;
+        padding: 15px 16px 17px 11px;
+        margin: auto;
+        &-Image {
+            width: 50px;
+            height: 50px;
+            
+        }
+        &-Boarding {
+            display: none;
+        }
+        &-Name {
+            font-size: 13px;
+            padding: 31px 13px 23px 0px;
+        }
+        &-Address {
+            &-Text {
+                font-size: 8px;
+                width: 143px;
+            }
+            &-Icon {
+                width: 8px;
+                height: 11.5px;
+                margin: 1px 4px 0 7px;
+            }
+        }
+    }
+}

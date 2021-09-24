@@ -1,0 +1,55 @@
+@font-face {
+    src: url("../Fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    src: url("../Fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+@import './Component/Navbar/navbar';
+
+@import './Component//UI/backDrop';
+@import './Component/UI/modal';
+@import './Component/UI/logo';
+@import './Component/UI/errorPage';
+
+@import './Component/Main/application';
+@import './Component/Main/about';
+@import './Component/Main/possibilities';
+@import './Component/Main/appDownload';
+@import './Component/UI/sibAppLogoButton';
+@import './Component/UI/bazzarLogoButton';
+@import './Component/UI/androidLogoButton';
+@import './Component/Main/register';
+
+@import './Component/Footer/support';
+@import './Component/Footer/footer';
+
+@import './Component/AboutUs/aboutUs';
+
+@import './Component/RegisterPharmacy/registerMain';
+@import './Component/RegisterPharmacy/registerMainCards';
+@import './Component/RegisterPharmacy/registerPharmacyCounter';
+@import './Component/RegisterPharmacy/registerPharmacyServices';
+
+@import './Component/ContactUs/contactUs';
+@import './Component/UI/blueCover';
+@import './Component/UI/map';
+
+@import './Component/FAQ/faq';
+@import './Component/FAQ/faqIcon';
+@import './Component/FAQ/faqQuestion';
+
+@import './Component/TermAndConditions/termAndConditions';
+
+@import './Component/UI/progressBar';
+@import './Component/RegisterPharmacyForm/registerPharmacy';
+@import './Component/RegisterPharmacyForm/registerPharmacyConfirm';
+@import './Component/RegisterPharmacyForm/registerPharmacyDetail';
+

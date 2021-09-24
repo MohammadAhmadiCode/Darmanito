@@ -1,0 +1,82 @@
+@import '../../Foundation/colors';
+
+// FAQ :
+
+.FAQ {
+    direction: rtl;
+    &-Title {
+            color: $epiBlue-color;
+            border-right: 4px solid $green-color;
+            direction: rtl;
+            padding-right: 1rem;
+            margin-bottom: 3rem;
+            width: 316px;
+            height: 27px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 90px 140px 0px 0;
+        }
+}
+
+// Responsive :
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .FAQ {
+        &-Title {
+            margin: 90px 70px 0px 0;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .FAQ {
+        &-Title {
+            margin: 90px 40px 0px 0;
+        }
+    }
+  
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .FAQ {
+        &-Title {
+            margin: 90px 20px 0px 0;
+            
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .FAQ {
+        &-Title {
+            margin: 90px 10px 0px 0;
+            font-size: 16px;
+            width: 253px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .FAQ {
+        &-Title {
+            margin: 90px 10px 0px 0;
+            font-size: 16px;
+            width: 253px;
+        }
+    }
+}
+
+

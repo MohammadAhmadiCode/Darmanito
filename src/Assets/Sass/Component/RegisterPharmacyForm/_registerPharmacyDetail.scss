@@ -1,0 +1,232 @@
+@import '../../Foundation/colors';
+
+// Register Pharmacy Seound From :
+
+.SecoundForms {
+    display: flex;
+    text-align: right;
+    &-Cards {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $cloudy-color;
+        padding: 220px 95px 85px;
+    }
+    &-Form {
+        width: 50%;
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        padding: 160px 140px 35px 100px;
+        &-Title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &-Titles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-City {
+            display: flex;
+            flex-direction: column;
+            margin: 60px 0 0 0;
+            &-Label {
+                font-size: 13px;
+                font-weight: normal;
+            }
+            &-Select {
+                width: 352px;
+                height: 46px;
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                font-size: 1rem;
+                padding: 0 15px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &-District {
+            display: flex;
+            flex-direction: column;
+            margin: 25px 0 0 0;
+            &-Label {
+                font-size: 13px;
+                font-weight: normal;
+            }
+            &-Select {
+                width: 352px;
+                height: 46px;
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                font-size: 1rem;
+                padding: 0 15px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &-Button {
+                width: 170px;
+                height: 52px;
+                color: $white-color;
+                background-color: $blue-color;
+                border: none;
+                cursor: pointer;
+                font-size: 1rem;
+                border-radius: 10px;
+                border: 2px solid $blue-color;
+                margin: 220px .2rem 2rem .2rem;
+                font-weight: bold;
+                &:focus {
+                    outline: none;
+            }
+        }
+    }
+}
+
+// Responsive :
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .SecoundForms {
+        &-Form {
+            padding: 160px 70px 35px 80px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .SecoundForms .directionLeft {
+        margin: 36px 100px 0 0;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0 0 36px 36px;
+    }
+    .SecoundForms {
+        &-Form {
+            padding: 160px 40px 35px 50px;
+        }
+    }
+    
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Form {
+            width: 100%;
+            padding: 100px 50px 35px 40px;
+        }
+    }
+    
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:280px) and (max-width:500px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 180px 95px 70px;
+        }
+        &-Form {
+            width: 100%;
+            align-items: center;
+            padding: 50px 15px 35px 15px;
+            &-Titles {
+                flex-direction: column-reverse;
+                gap: 4rem;
+            }
+            &-City-Select {
+                width: 303px;
+                height: 46px;
+            }
+            &-District-Select {
+                width: 303px;
+                height: 46px;
+            }
+            &-Button {
+                margin: 120px .2rem 2rem .2rem;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:280px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 250px 95px 70px;
+        }
+        &-Form {
+            width: 100%;
+            align-items: center;
+            padding: 50px 5px 35px 5px;
+            &-Titles {
+                flex-direction: column-reverse;
+                gap: 4rem;
+            }
+            &-City-Select {
+                width: 203px;
+                height: 46px;
+            }
+            &-District-Select {
+                width: 203px;
+                height: 46px;
+            }
+            &-Button {
+                margin: 120px .2rem 2rem .2rem;
+            }
+        }
+    }
+}

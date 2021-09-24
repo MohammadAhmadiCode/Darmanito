@@ -1,0 +1,48 @@
+@import '../../Foundation/colors';
+@import '../../Foundation/fonts';
+
+.errorPage {
+    display: flex;
+    top: 30%;
+    left : 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    &-Image {
+        padding : 50px;
+        width: 45%;
+        height: 50%;
+    }
+    &-Texts {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: left;
+        padding: 120px 0 0 0;
+        width: 50%;
+        height: 50%;
+        &-Title {
+            font-family: 'Bangers', cursive;
+            font-size: 60px;
+            color : $blue-color ;
+        }
+        &-Text {
+            font-family: 'Bangers', cursive;
+            font-size: 35px;
+            color : $blue-color ;
+            &-Click {
+                padding: 0 30px;
+                font-family: 'Bangers', cursive;
+                color : $epiBlue-color;
+                &-Span {
+                    font-family: 'Bangers', cursive;
+                    color : Red
+                }
+                &:hover {
+                    text-decoration: none;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }   
+}

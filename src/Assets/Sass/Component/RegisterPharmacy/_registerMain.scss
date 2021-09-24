@@ -1,0 +1,160 @@
+@import '../../Foundation/colors';
+
+// Register Main :
+
+.register {
+    &-Main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        text-align: right;
+        margin: 240px 140px 180px 0;
+        &-Items {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            width: 40%;
+            padding: 40px 0 0 0;
+            &-Title {
+                color: $blue-color;
+                margin: 22px 0;
+                width: 405px;
+                height: 110px;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1.87;
+            }
+            &-Description {
+                color: $gray-textColor;
+                width: 444px;   
+                height: 104px;
+                margin: 0 0 30px 0;
+            }
+            &-Inputs {
+                background-color: $smokeWhite-color;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 10px;
+                margin-left: auto;
+                width: 500px;
+                height: 65px;
+                background-color: #f9f9f9;
+                &-Input {
+                    background-color: $smokeWhite-color;
+                    border: none;
+                    width: 250px;
+                    height: 3rem;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &-Button {
+                    background-color: $blue-color;
+                    color: $white-color;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    width: 130px;
+                    height: 45px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.errors {
+    color: red;
+    margin: 15px 5px 0 0;
+    direction: rtl;
+    font-weight: bold;
+}
+
+// Responsive :
+
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .register-Main {
+        margin: 240px 70px 180px 0;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .register-Main {
+        margin: 240px 10px 180px 0;
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .register-Main {
+        margin: 240px 0 180px 0;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+        &-Items {
+            align-items: center;
+            width: auto;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .register-Main {
+        margin: 180px 0 75px 0;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+        &-Items {
+            align-items: center;
+            width: auto;
+            &-Inputs {
+                width: 302px;
+                height: 55px;
+                padding: 9px 14.3px 8px 12.5px;
+                &-Button {
+                    width: 93px;
+                    height: 38px;
+                    font-size: 12px;
+                }
+            }
+            &-Title {
+                width: 275px;
+                height: 77px;
+                font-size: 24px;
+            }
+            &-Description {
+                width: 302px;
+                font-size: 14px;
+                height: 85px;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .register-Main {
+        margin: 220px 0 75px 0;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+        &-Items {
+            display: none;
+        }
+    }
+}

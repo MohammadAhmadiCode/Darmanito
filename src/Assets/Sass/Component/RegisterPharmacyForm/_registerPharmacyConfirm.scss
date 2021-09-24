@@ -1,0 +1,319 @@
+@import '../../Foundation/colors';
+
+// Register Pharmacy Third Form :
+
+.ThirdForms {
+    display: flex;
+    text-align: right;
+    &-Cards {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $cloudy-color;
+        padding: 210px 100px 85px;
+    }
+    &-Preview {
+        width: 50%;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 140px 145px 80px 60px;
+        &-PlaceName,
+        &-PlacePhone,
+        &-City,
+        &-District,
+        &-WorkingHours,
+        &-FullAddress,
+        &-FullName,
+        &-MedicId {
+            &-Label {
+                font-size: 13px;
+                font-weight: 300;
+            }
+            &-Value {
+                font-size: 17px;
+                font-weight: normal;
+            }
+            width: 30%;
+            direction: rtl;
+            margin: 1rem 0;
+        }
+        &-FullAddress {
+            width: 90%;
+            text-align: right;
+        }
+        &-FullName,
+        &-MedicId {
+            text-align: right;
+            width: 50%;
+        }
+        &-Line {
+            height: 0px;
+            margin: 5px 0 17px 0;
+            border-radius: 5px;
+            width: 491px;
+            border: solid 0.5px rgba(0, 0, 0, 0.16);
+        }
+        &-Form {
+            width: 90%;
+            margin: 50px 0 0 0;
+            &-Buttons {
+                display: flex;
+                &-Submit {
+                    width: 170px;
+                    height: 52px;
+                    color: $white-color;
+                    background-color: $blue-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                    margin: 0 15px 0 0;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &-EditButton {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 170px;
+                    height: 52px;
+                    color: $blue-color;
+                    background-color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive :
+
+@media(min-width:1000px) and (max-width:1300px) {
+
+    .ThirdForms .directionLeft {
+        margin: 36px 80px 0 0;
+    }
+    .ThirdForms .registerMainCards {
+        margin: 0 0 36px 25px;
+    }
+    .ThirdForms {
+        &-Preview {
+            padding: 140px 70px 80px 60px;
+        }
+    }
+   
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:750px) and (max-width:1000px) {
+
+    .ThirdForms .directionLeft {
+        display: none;
+    }
+    .ThirdForms .registerMainCards {
+        margin: 0;
+    }
+    .ThirdForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .ThirdForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Preview {
+            width: 100%;
+            padding: 80px 180px 35px 40px;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:750px) {
+
+    .ThirdForms .directionLeft {
+        display: none;
+    }
+    .ThirdForms .registerMainCards {
+        margin: 0;
+    }
+    .ThirdForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .ThirdForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Preview {
+            width: 100%;
+            padding: 80px 80px 35px 40px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .ThirdForms .Modal {
+        left: 9%;
+        top: 33%;
+        width: 375px;
+        height: 352px;
+        padding: 20px 11px 0px 12px;
+        &-Image {
+            width: 182.9px;
+            height: 129.8px;
+            margin: auto;
+        }
+        &-Items {
+            align-items: center;
+            &-Title {
+                font-size: 16px;
+            }
+            &-Text {
+                font-size: 14px;
+            }
+            &-Button {
+                width: 170px;
+                height: 52px;
+                padding: 0;
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+    .ThirdForms .directionLeft {
+        display: none;
+    }
+    .ThirdForms .registerMainCards {
+        margin: 0;
+    }
+    .ThirdForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .ThirdForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Preview {
+            width: 100%;
+            padding: 80px 40px 35px 40px;
+            text-align: center;  
+            text-align-last: center;
+            &-FullAddress {
+                width: 45%;
+            }
+            &-Line {
+                width: 376px;
+            }
+            &-Form-Buttons {
+                display: flex;
+                flex-flow: column-reverse;
+                justify-content: center;
+                gap: 1rem;
+                align-items: center;
+                &-Submit {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .ThirdForms .Modal {
+        left: 5%;
+        top: 33%;
+        width: 320px;
+        height: 320px;
+        padding: 20px 11px 0px 12px;
+        &-Image {
+            width: 182.9px;
+            height: 129.8px;
+            margin: auto;
+        }
+        &-Items {
+            align-items: center;
+            &-Title {
+                font-size: 16px;
+            }
+            &-Text {
+                font-size: 14px;
+            }
+            &-Button {
+                width: 170px;
+                height: 52px;
+                padding: 0;
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+    .ThirdForms .directionLeft {
+        display: none;
+    }
+    .ThirdForms .registerMainCards {
+        margin: 0;
+    }
+    .ThirdForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .ThirdForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Preview {
+            width: 100%;
+            padding: 80px 5px 35px 5px;
+            text-align: center;  
+            text-align-last: center;
+            &-FullAddress {
+                width: 45%;
+            }
+            &-Line {
+                width: 276px;
+            }
+            &-Form-Buttons {
+                display: flex;
+                flex-flow: column-reverse;
+                justify-content: center;
+                gap: 1rem;
+                align-items: center;
+                &-Submit {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

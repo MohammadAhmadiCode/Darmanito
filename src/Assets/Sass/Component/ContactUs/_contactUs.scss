@@ -1,0 +1,306 @@
+@import '../../Foundation/colors';
+
+// Contact US :
+
+.contactUs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.message {
+    flex: .5;
+    text-align: right;
+    padding: 0 0 130px 0;
+    &-Form {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        padding: 165px 0 0 0;
+        &-Label {
+            height: 16px;
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+        }
+        &-Input {
+            width: 444px;
+            height: 46px;
+            margin: 0 0 25px;
+            padding: 13px 10px 12px 0;
+            border-radius: 10px;
+            border: solid 1px $separator-color;
+            &:focus {
+                border: 2px solid $blue-color;
+                outline: none;
+            }
+            &::placeholder {
+                color: #c7c7c7;
+            }
+        }
+        &-Textarea {
+            width: 444px;
+            height: 174px;
+            margin: 12px 0 0;
+            padding: 13px 0 142px 100px;
+            border-radius: 10px;
+            border: solid 1px $separator-color;
+            &::placeholder {
+                color: #c7c7c7;
+            }
+            &:focus {
+                border: 2px solid $blue-color;
+                outline: none;
+            }
+        }
+        &-Button {
+            width: 444px;
+            height: 52px;
+            margin: 36.5px 0 0 50.5px;
+            padding: 14.5px 191px 15.5px 187px;
+            border-radius: 8px;
+            border: solid 1px $blue-color;
+            background-color: $white-color;
+            &-Text {
+                width: 66px;
+                height: 22px;
+                color: $blue-color;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Responsive :
+
+@media(min-width:700px) and (max-width:1270px) {
+    
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .message-Form {
+        place-items: center;
+        &-Button {
+            margin: 36.5px 0 0 0;
+        }
+        &-Label {
+            align-self: baseline;
+            padding: 0 85px 0 0;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:550px) and (max-width:700px) {
+    
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .map-Container {
+        width: 500px !important;
+        height: 350px !important;
+    }
+    .map-Texts {
+        flex-wrap: wrap;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 418px !important;
+        height: 314px !important;
+        -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+        top: 580px !important;
+        left: 42px !important;
+        z-index: 1000000 !important;
+        &-Address {
+            width: 353px !important;
+        }
+    }
+    .map-Items {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 18px 0 0 0;
+        &-email {
+            padding: 0 0 0 20px;
+        }
+    }
+    .message-Form {
+        place-items: center;
+        padding: 350px 0 0 0;
+        &-Button {
+            margin: 36.5px 0 0 0;
+        }
+        &-Label {
+            align-self: baseline;
+            padding: 0 30px 0 0;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+
+@media(min-width:360px) and (max-width:550px) {
+
+    .Map {
+        align-items: center;
+    }
+    .map-Container {
+        width: 302px !important;
+        height: 245px !important;
+    }
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .map-Texts {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        align-items: center;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);;
+        top: 424px !important;
+        left: 0px !important;
+        z-index: 1000000 !important;
+        width: 290px !important;
+        height: 219px !important;
+        justify-content: center;
+        &-Email {
+            font-size: 12px !important;
+        }
+        &-Phone {
+            font-size: 12px !important;
+        }
+        &-Address {
+            width: 255px !important;
+            height: 55px !important;
+            font-size: 12px !important;
+        }
+        &-Titles {
+            font-size: 12px;
+        }
+    }
+    .map-Items {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 18px 0 0 0;
+        &-email {
+            padding: 0;
+        }
+    }
+    .message-Form {
+        place-items: center;
+        padding: 260px 0 0 0;
+        &-Button {
+            width: 302px;
+            margin: 36.5px 0 0 0;
+            padding: 14.5px 120px 15.5px 116px;
+        }
+        &-Label {
+            align-self: baseline;
+            padding: 0 2px 0 0;
+        }
+        &-Input {
+            width: 303px;
+            height: 46px;
+            padding: 10px;
+        }
+        &-Textarea {
+            width: 302px;
+            height: 150px;
+            padding: 10px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .Map {
+        align-items: center;
+    }
+    .map-Container {
+        width: 202px !important;
+        height: 145px !important;
+    }
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .map-Texts {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        align-items: center;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);;
+        top: 224px !important;
+        left: 0px !important;
+        z-index: 1000000 !important;
+        width: 190px !important;
+        height: 119px !important;
+        justify-content: center;
+        &-Email {
+            font-size: 12px !important;
+        }
+        &-Phone {
+            font-size: 12px !important;
+        }
+        &-Address {
+            width: 155px !important;
+            height: 55px !important;
+            font-size: 12px !important;
+        }
+        &-Titles {
+            font-size: 12px;
+        }
+    }
+    .map-Items {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 18px 0 0 0;
+        &-email {
+            display: none;
+        }
+        &-number{
+            display: none;
+        }
+    }
+    .message-Form {
+        place-items: center;
+        padding: 160px 0 0 0;
+        &-Button {
+            width: 202px;
+            margin: 36.5px 0 0 0;
+            padding: 14px;
+            text-align: center;
+        }
+        &-Label {
+            align-self: baseline;
+            padding: 0 55px 0 0;
+        }
+        &-Input {
+            width: 203px;
+            height: 46px;
+            padding: 10px;
+        }
+        &-Textarea {
+            width: 202px;
+            height: 150px;
+            padding: 10px;
+        }
+    }
+}

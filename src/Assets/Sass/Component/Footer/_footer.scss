@@ -1,0 +1,252 @@
+@import '../../Foundation/colors';
+
+// Footer :
+
+.footer .logo {
+    padding: 0px 50px 34px 0px;
+}
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    place-content: space-between;
+    text-align: right;
+    padding: 0 90px 0 90px;
+    &-Main {
+        align-self: auto;
+        direction: rtl; 
+        &-Title{
+            direction: rtl;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0 60px 0 0;
+        }
+        &-Text {
+            direction: rtl;
+            margin-bottom: 3rem;
+            width: 256px;
+            height: 53px;
+            margin: 0 60px 0 0;
+            font-size: 14px;
+        }
+        &-SocialNetwork {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            float: right;
+            padding: 0 60px 90px 0;
+            &-Instagram,
+            &-Linkedin,
+            &-Twitter {
+                font-size: 24px;
+                height: auto;
+                color: $black-textColor;
+                cursor: pointer;
+                margin: .5rem;
+                padding:  30px 0 0 0 ;
+                &:hover,
+                &.active {
+                    color: $blue-color;
+                    transition: 0.4s;
+                }
+                
+            }
+        }
+    }
+    &-Download {
+        align-self: auto;
+        direction: rtl;
+        padding: 20px 0 0 0;    
+        &-Title {
+            margin: 0 0 1rem 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &-Icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+    &-Services {
+        align-self: auto;
+        direction: rtl;
+        padding: 20px 0 0 0;
+        &-Title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &-Item {
+            list-style: none;
+            &-Items {
+                height: 19px;
+                margin: 30px 0;
+                &-li {
+                    color: #616161;
+                    font-size: 14px;
+                    text-decoration: none !important;
+                    &:hover,
+                    &.Active {
+                        font-weight: bold;
+                        border-right: 4px solid $green-color;
+                        padding-right: .5rem;
+                        transition: .3s ease;
+                        border-radius: 2px;
+                        color: $epiBlue-color !important;
+                    }
+                }
+            }
+        }
+    }
+    &-Pages {
+        direction: rtl;
+        align-self: auto;
+        padding: 20px 0 0 0;
+        &-Item {
+            list-style: none;
+            &-Items {
+                height: 19px;
+                margin: 30px 0;
+                &-li {
+                    color: #616161;
+                    font-size: 14px;
+                    text-decoration: none !important;
+                    &:hover,
+                    &.Active {
+                        font-weight: bold;
+                        border-right: 4px solid $green-color;
+                        padding-right: .5rem;
+                        transition: .3s ease;
+                        border-radius: 2px;
+                        color: $epiBlue-color !important;
+                    }
+                }
+            }
+        }
+        &-Title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 0 0px;
+        }
+    }
+}
+
+// Responsive Mode :
+
+@media(min-width:1250px) and (max-width:1450px) {
+    
+    .footer {
+        padding: 0 70px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1080px) and (max-width:1250px) {
+    
+    .footer {
+        padding: 0 25px 0 35px;
+        &-Pages {
+            &-Title {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:850px) and (max-width:1080px) {
+
+    .footer .logo {
+        padding: 0px 10px 34px 0px;
+    }
+    .footer {
+        padding: 0 25px 0 35px;
+        &-Main {
+            &-Title {
+                padding: 0 22px 0 0;
+            }
+            &-Text {
+                margin: 0 22px 0 0;
+                width: 175px;
+            }
+            &-SocialNetwork {
+                padding: 0 22px 90px 0;
+            }
+        }
+        &-Pages {
+            &-Title {
+                margin: 0;
+            }
+        }
+        &-Download {
+            &-Title {
+                margin: 0 0 30px 0;
+                text-align: center;
+            }
+            &-Icons {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media (min-width:300px) and(max-width:850px) {
+
+    .footer .logo {
+        padding: 0px 10px 34px 0px;
+    }
+    .footer {
+        place-content: unset;
+        padding: 0 37px 0 0;
+        &-Main {
+            &-Title {
+                padding: 0 22px 0 0;
+            }
+            &-Text {
+                margin: 0 22px 0 0;
+            }
+            &-SocialNetwork {
+                padding: 0 22px 90px 0;
+            }
+        }
+        &-Pages,
+        &-Download,
+        &-Services {
+            display: none;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media (min-width:100px) and(max-width:300px) {
+
+    .footer .logo {
+        padding: 0px 5px 34px 0px;
+    }
+    .footer {
+        place-content: unset;
+        padding: 5px;
+        &-Main {
+            &-Title {
+                padding: 0 22px 0 0;
+            }
+            &-Text {
+                margin: 0 22px 0 0;
+                width: 170px;
+            }
+            &-SocialNetwork {
+                padding: 0 22px 90px 0;
+            }
+        }
+        &-Pages,
+        &-Download,
+        &-Services {
+            display: none;
+        }
+    }
+}

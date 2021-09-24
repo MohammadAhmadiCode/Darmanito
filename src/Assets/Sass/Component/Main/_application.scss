@@ -1,0 +1,153 @@
+@import '../../Foundation/colors';
+
+
+// Application :
+
+.application {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-Items {
+      display: flex;
+      flex-flow: column;
+   }
+   &-TextsItems {
+      float: right;
+      text-align: right;
+      padding: 205px 0px 0px 0px;
+      & h1 {
+          color : $blue-color;
+          padding : 122px 0px 0px 0px;
+       }
+   }
+   &-Image {
+      float: left;    
+      padding : 205px 0px 0px 0px;
+   }
+   &-ButtonItems {
+      direction: rtl;
+   }
+   &-ButtonsStyleItems {
+      display: inline-block;
+      background-color: $blue-color;
+      width: 170px;
+      height: 52px;
+      margin: 0 0 0 14px;
+      border: none;
+      color: $white-color;
+      text-align: center; 
+      font-size: 18px;
+      cursor: pointer;    
+      border-radius: 10px;
+   }
+ }
+ 
+.application-ButtonsStyleItems-withoutColor,
+                             .withoutColor {
+    @extend .application-ButtonsStyleItems ;
+        background-color: $white-color;
+        border: solid 1px $blue-color;
+        text-decoration: none;
+        color: $blue-color;
+ }
+
+ // Responsive :
+
+
+@media(min-width:500px) and (max-width:1000px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-Image {
+         &-Image {
+            width: 302.4px;
+            height: 227.9px;
+        }
+      }
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-Image {
+         &-Image {
+            width: 273.4px;
+            height: 163.9px;
+        }
+      }
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            font-size: 25px;
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+         & p {
+            font-size: 13px;;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}

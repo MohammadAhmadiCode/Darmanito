@@ -1,0 +1,67 @@
+@import '../../Foundation/colors';
+
+.Modal {
+    position: fixed;
+    z-index: 5000000;
+    background-color: $white-color;
+    left: 33%;
+    top: 20%;   
+    width: 536px;
+    height: 536px;
+    padding: 70px 92px 70.4px 87.5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    transition: 0.7s;
+    &-Image {
+        width: 241px;
+        height: 171px;
+        margin: 0 55.5px 54px 60px;
+        object-fit: contain;
+    }
+    &-Items {
+        display : flex;
+        flex-direction: column;
+        &-Title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00de9a;
+        }
+        &-Text {
+            font-size: 18px;
+            font-weight: 300;
+            padding : 0 0 25px 0;
+        }
+        &-Button {
+            width: 352px;
+            height: 52px;
+            padding: 14px 153px 17px 152px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
+            background-color: $blue-color;
+            border: none;
+            cursor: pointer;
+            &-Text {
+                font-size: 16px;
+                font-weight: bold;
+                color : $white-color;
+                text-decoration: none !important;
+                &:hover {
+                    outline: none;
+                    color : $white-color;   
+                }
+            }
+        }
+    }
+}
+
+.Active {
+    transform : translateY(0);
+    opacity: 1;
+}
+.Not-Active {
+    transform : translateY(-200vh);
+    opacity: 0;
+}

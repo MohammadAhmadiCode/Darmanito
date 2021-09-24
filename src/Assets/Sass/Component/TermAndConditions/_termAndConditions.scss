@@ -1,0 +1,166 @@
+@import '../../Foundation/colors';
+
+// Term And Conditions :
+
+.TermAndConditionsIcon {
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 60%;
+    filter: grayscale(100);
+    width: 160px;
+    height: 160px;
+    padding: 47px 36px 50px 36px;
+    margin: 45px 0 70px 0;
+    direction: rtl;
+    transition: 0.5s;
+    &-Text {
+        color: $gray-textColor;
+        text-align: center;
+        width: 100px;
+        height: 63px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2.63;
+    }
+    &-Active {
+        opacity: 100%;
+        filter: grayscale(0);
+        color: #2361b5;
+    }
+}
+.TermAndConditionsList {
+    direction: rtl;
+    &-Title {
+        color: #2361B5;
+        border-right: 4px solid $green-color;
+        padding-right: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+        width: 575px;
+        height: 28px;
+        margin: 90px 140px 0px 0;
+        border-radius: 3px;
+    }
+    &-Icon {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 190px;
+        justify-content: space-between;
+        direction: ltr;
+    }
+    &-Description {
+        text-align: -webkit-center;
+        &-Text {
+            direction: rtl;
+            width: 920px;
+            height: 373px;
+            margin:  0 215px 0 215px;
+            text-align: right;
+        }
+    }
+}
+
+// Responsive : 
+
+@media(min-width:1100px) and (max-width:1300px) {
+    
+   .TermAndConditionsList {
+       &-Title {
+            margin: 90px 70px 0px 0;
+       }
+       &-Icon {
+            margin: 0 150px;
+       }
+       &-Description {
+        &-Text {
+            width: 65%;
+            }
+        }   
+   }
+   
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1100px) {
+
+    .TermAndConditionsList {
+        &-Title {
+             margin: 90px 40px 0px 0;
+        }
+        &-Icon {
+             margin: 0 100px;
+        }
+        &-Description {
+            &-Text {
+                width: 60%;
+            }
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .TermAndConditionsList {
+        &-Title {
+            margin: 70px 30px 0px 0;
+        }
+        &-Icon {
+            margin: 0 80px;
+            overflow: visible;
+            gap: 2rem;
+        }
+        &-Description {
+            &-Text {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .TermAndConditionsList {
+        &-Title {
+            margin: 35px 10px 35px 0;
+            width: 291px;
+            height: 28px;
+            line-height: 34px;
+        }
+        &-Icon {
+            margin: 0 30px;
+            overflow: visible;
+            gap: 1rem;
+        }
+        &-Description {
+            &-Text {
+                width: 60%;
+                margin: 0 auto 150px auto;
+            }
+        }
+    }
+    .TermAndConditionsIcon {
+        width: 120px;
+        height: 120px;
+        &-Text {
+            font-size: 13px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    
+}

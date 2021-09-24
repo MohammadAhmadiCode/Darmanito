@@ -1,0 +1,276 @@
+@import '../../Foundation/colors';
+
+
+// Possibilities
+
+.possibilities {
+    display: grid;
+    grid-template-columns: 2fr .5fr;
+    grid-template-rows: 50px;;
+    grid-template-areas: 
+    "possibilities-title possibilities-title"
+    "possibilities-info possibilities-icons";
+    text-align: right;
+    padding: 225px 140px 0 0;
+    &-Title {
+        grid-area: possibilities-title;
+        direction: rtl;
+        color: $epiBlue-color;
+        border-right: 4px solid $green-color;
+        height: 27px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 15px 0 0;
+        border-radius: 2px;
+    }
+    &-Icons {
+        direction: rtl;
+        grid-area: possibilities-icons;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        justify-items: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    &-Info {
+        grid-area: possibilities-info;
+        direction: rtl;
+        width: 95%;
+        margin-left: auto;
+        padding : 0 140px 0 0;
+        &-Description {
+            margin-bottom: 2rem;
+            width: 506px;
+            height: 64px;
+        }
+        &-Step1 {
+            & > div {
+                display: flex;
+                flex-direction: row;
+            }
+            &-Image {
+                width: 2rem;
+                height: 2rem;
+                background-color: $cloudy-color;
+                border-radius: 50%;
+                padding: .5rem;
+                margin-left: 1rem;
+            }
+            &-Description {
+                padding: 0rem 4rem 1rem 0;
+                border-right: 2px solid $cloudy-color;
+                font-size: 14px;
+                margin-right: 1rem;
+            }
+        }
+        &-Step2 {
+            & > div {
+                display: flex;
+                flex-direction: row;
+            }
+            &-Description {
+                padding: 0rem 4rem 1rem 0;
+                border-right: 2px solid $cloudy-color;
+                margin-right: 1rem;
+                font-size: 14px;
+            }
+            &-Image {
+                width: 2rem;
+                height: 2rem;
+                background-color: $cloudy-color;
+                border-radius: 50%;
+                padding: .5rem;
+                margin-left: 1rem;
+            }
+        }
+        &-Step3 {
+            & > div {
+                display: flex;
+                flex-direction: row;
+            }
+            &-Description {
+                padding: 0rem 4rem 1rem 0;
+                font-size: 14px;
+                margin-right: 1rem;
+            }
+            &-Image {
+                width: 2rem;
+                height: 2rem;
+                background-color: $green-color;
+                border-radius: 50%;
+                padding: .5rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-Icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 160px;
+        box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+        border-radius: 25px;
+        margin: .5rem;
+        opacity: 0.5;
+        cursor: pointer;
+        filter: grayscale(100);
+        transition: 0.5s;
+        &-Active {
+            filter: grayscale(0);
+            opacity: unset;
+        }
+        &-Image {
+            width: 60px;
+            height: 70px;
+        }
+        &-Title {
+            font-size: 14px;
+            padding: 8px 0 0 0;
+        }
+    }
+}
+
+// Responsive Mode : 
+
+@media(min-width:1650px) and (max-width:2000px) {
+   
+    .possibilities {
+        padding-right: 300px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .possibilities {
+        padding: 225px 70px 0 0;
+    }
+  
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+    .possibilities {
+        padding: 225px 70px 0 0;
+        &-Info {
+            padding: 0 50px 0 0;
+        }
+    }
+    
+}
+ 
+// ------------------------------------------- // 
+
+@media screen and (max-width:1000px) {
+    .possibilities {
+        display: flex;
+        flex-wrap: wrap;
+        direction: rtl;
+        text-align: right;
+        padding: 85px 0 0 0;
+        &-Icons {
+            direction:rtl;
+            grid-area: possibilities-icons;
+            display: flex;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            padding: 40px 45px 40px 0;
+            overflow: visible;
+        }
+        &-Title {
+            margin: 0 50px 0 0;
+        }
+        &-Info {
+            padding: 0 50px 0 0;
+            &-Description {
+                width: 410px;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .possibilities {
+        display: flex;
+        flex-wrap: wrap;
+        direction: rtl;
+        text-align: right;
+        padding: 85px 0 0 0;
+        &-Icons {
+            direction:rtl;
+            grid-area: possibilities-icons;
+            display: flex;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            padding: 40px 37px 40px 0;
+            overflow: visible;
+        }
+        &-Icon {
+            width: 130px;
+            height: 130px;
+            &-Title {
+                margin: 0;
+            }
+        }
+        &-Title {
+            margin: 0 37px 0 0;
+        }
+        &-Info {
+            padding: 0 37px 0 0;
+            &-Description {
+                width: 303px;
+                height: 94px;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .possibilities {
+        display: flex;
+        flex-wrap: wrap;
+        direction: rtl;
+        text-align: right;
+        padding: 85px 0 0 0;
+        &-Icons {
+            direction:rtl;
+            grid-area: possibilities-icons;
+            display: flex;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            padding: 40px 10px 40px 0;
+            overflow: visible;
+        }
+        &-Icon {
+            width: 130px;
+            height: 130px;
+            &-Title {
+                margin: 0;
+            }
+        }
+        &-Title {
+            margin: 0 10px 0 0;
+        }
+        &-Info {
+            padding: 0 10px 0 0;
+            &-Description {
+                width: 239px;
+                height: 94px;
+            }
+        }
+    }
+}

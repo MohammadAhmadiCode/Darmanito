@@ -1,0 +1,26 @@
+@import '../../Foundation/colors';
+
+.sibAppButton-Container {
+    text-decoration: none !important;
+    margin: 0;
+}
+.sibAppButton {
+    width: 180px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    color: $white-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    &-a {
+        margin: 0;
+    }
+    &-Text {
+        margin: 0;
+        font-size: 12px;
+        
+    }
+}

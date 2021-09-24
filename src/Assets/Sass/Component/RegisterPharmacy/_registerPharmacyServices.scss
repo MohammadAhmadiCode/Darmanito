@@ -1,0 +1,172 @@
+@import '../../Foundation/colors';
+
+// Register Services :
+
+.pharmacyServices {
+    margin: 100px 140px;
+    text-align: -webkit-right;
+    &-Title {
+        direction: rtl;
+        color: $epiBlue-color;
+        border-right: 4px solid $green-color;
+        padding-right: 30px;
+        height: 27px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &-Description {
+        direction: rtl;
+        margin: 23px 0 60px 0;
+        height: 21px;
+    }
+    &-Items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-Card {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            width: 443px;
+            height: 500px;
+            border-radius: 50px;
+            box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+            background-color: $white-color;
+            &-Image {
+                display: flex;
+                justify-content: center;
+                margin: 2.3rem auto;
+                width: 150px;
+                height: 150px;
+                width: 138.5px;
+                height: 160.6px;
+                object-fit: contain;
+            }
+            &-Title {
+                color: $epiBlue-color;
+                direction: rtl;
+                height: 27px;
+                padding: 20px 0 0 0;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &-Description {
+                direction: rtl;
+                width: 401px;
+                height: 60px;
+                padding: 25px 0 0 0;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            &-Button {
+                background-color: $blue-color;
+                color: $white-color;
+                font-weight: bold;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                align-self: center;
+                width: 170px;
+                height: 52px;
+                margin: 35px 115px 0 116px;
+                padding: 14px 61px 17px ;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+// Responsive :
+
+@media(min-width:1500px) and (max-width:2000px) {
+   
+    .pharmacyServices {
+        margin: 100px 180px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .pharmacyServices {
+        margin: 100px 70px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .pharmacyServices {
+        margin: 100px 20px;
+        &-Items {
+            justify-content: space-around;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .pharmacyServices {
+        margin: 100px 20px;
+        &-Items {
+            flex-wrap: wrap;
+            flex-flow: column-reverse;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .pharmacyServices {
+        margin: 100px 5px;
+        &-Title {
+            margin: 0 25px 0 0;
+            font-size: 16px;
+        }
+        &-Description {
+            font-size: 13px;
+            padding: 0 35px 0 0;
+        }
+        &-Items {
+            flex-wrap: wrap;
+            flex-flow: column-reverse;
+            align-items: center;
+            gap: 2rem;
+            &-Card {
+                width: 303px;
+                height: 342px;
+                padding: 112px 21px 16px 22px;
+                &-Title {
+                    font-size: 16px;
+                }
+                &-Image {
+                    display: none;
+                }
+                &-Description {
+                    width: 260px;
+                    height: 73px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .pharmacyServices {
+        display: none;
+    }
+    
+}

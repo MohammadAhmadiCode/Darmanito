@@ -1,0 +1,544 @@
+@import '../../Foundation/colors';
+
+// Register Pharmacy First Form :
+
+.FirstForms {
+    display: flex;
+    justify-content: center;
+    &-Form {
+        display: flex;
+        flex-wrap: wrap;
+        direction: rtl;
+        width: 60%;
+        margin: 140px 0 50px 0;
+        text-align: right;
+        justify-content: center;
+        &-Error {
+            height: 1rem;
+            color: red;
+            font-size: 14px;
+        }
+        &-FullName {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 16px;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-MedicId {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 0px;
+            &-Label {
+                font-size: 13px;
+                &-Span {
+                    color : $blue-color;
+                }
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-PlaceName {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 16px;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-PlacePhone {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 0px;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-City {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 16px;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 9px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-District {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0 0 0px;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 352px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-FullAddress {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0;
+            &-Label {
+                font-size: 13px;
+            }
+            &-Input {
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                width: 720px;
+                height: 46px;
+                padding: 15px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+        }
+        &-TimeSection {
+            display: flex;
+            flex-direction: row;
+        }
+        &-Boarding {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 0 150px;
+            direction: ltr;
+            &-Label {
+                font-size: 16px;
+                padding: 0 5px 0 0;
+                margin: 0;
+            }
+            &-Select {
+                display: flex;
+            }
+            &-True {
+                border: 1px solid $separator-color;
+                font-size: 14px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: .5rem;
+                direction: rtl;
+                width: 100px;
+                height: 40px;
+                &-Label {
+                    margin: 0 !important;
+                }
+                &-Active {
+                    border: 1px solid $blue-color;
+                    font-size: 14px;
+                    color: $blue-color;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    direction: rtl;
+                    width: 100px;
+                    height: 40px;
+                }
+            }
+            &-False {
+                border: 1px solid $separator-color;
+                font-size: 14px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: .5rem 0 .5rem 0;
+                direction: rtl;
+                width: 100px;
+                height: 40px;
+                &-Label {
+                    margin: 0 !important;
+                }
+                &-Active {
+                    border: 1px solid $blue-color;
+                    font-size: 14px;
+                    color: $blue-color;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    direction: rtl;
+                    width: 100px;
+                    height: 40px;
+                }
+            }
+        }
+        &-WorkTime {
+            display: flex;
+            flex-direction: column;
+            &-Label {
+                font-size: 13px;
+            }
+            &-FromInput {
+                width: 168px;
+                height: 46px;
+                margin: 0 0 0 16px;
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                padding: 5px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+            }
+            &-ToInput {
+                width: 168px;
+                height: 46px;
+                border-radius: 10px;
+                border: 1px solid $separator-color;
+                padding: 5px;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
+
+            }
+        }
+        &-Button {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+        &-NextButton {
+            flex-direction: row-reverse;
+            display: flex;
+            &-Button {
+                width: 170px;
+                height: 52px;
+                color: $white-color;
+                background-color: $blue-color;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 8px;
+                border: 1px solid $blue-color;
+                margin: 0 272px 0 0;
+                font-weight: bold;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &-UploadButton {
+            flex-direction: row-reverse;
+            display: flex;
+            &-Button {
+                font-size: 14px;
+                &::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                &::before {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    content: "آپلود عکس داروخانه";
+                    width: 170px;
+                    height: 52px;
+                    color: $blue-color;
+                    background-color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.Error,
+.Error:focus
+{
+    border: 1px solid red;
+}
+
+// Responsive :
+
+@media(min-width:1800px) and (max-width:2000px) {
+    
+    .FirstForms {
+        &-Form {
+            justify-content: space-between;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:850px) and (max-width:1200px) {
+    
+    .FirstForms {
+        &-Form {
+            width: 85%;
+        }
+    }
+    
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:850px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullAddress-Input {
+                width: 352px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 200px;
+            }
+            &-NextButton-Button {
+                margin: 0 170px 0 0;
+            }
+        }
+    }
+    
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlaceName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlacePhone {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-MedicId {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-City {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-District {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-FullAddress {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-Boarding {
+                margin: 0 0 0 80px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 268px;
+            }
+            &-NextButton-Button {
+                margin: 0 130px 0 0;
+            }
+            &-WorkTime {
+                &-FromInput,
+                &-ToInput {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlaceName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlacePhone {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-MedicId {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-City {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-District {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-FullAddress {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-Boarding {
+                margin: 0 0 0 80px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 268px;
+            }
+            &-NextButton-Button {
+                margin: 0 130px 0 0;
+            }
+            &-WorkTime {
+                &-FromInput,
+                &-ToInput {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}

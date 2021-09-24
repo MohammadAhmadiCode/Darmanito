@@ -1,0 +1,23 @@
+@import '../../Foundation/colors';
+
+.blueCover {
+    display: flex;
+    background-color: $coverBlue-color;
+    color: $white-color;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    margin: 110px 0 0 0;
+    &-Text {
+        margin: auto;
+    }
+}
+
+// Responsive : 
+
+@media(min-width:100px) and (max-width:280px) {
+
+    .blueCover {
+        margin: 200px 0 0 0;
+    }
+  }

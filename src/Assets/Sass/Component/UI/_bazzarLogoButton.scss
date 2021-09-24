@@ -1,0 +1,23 @@
+@import '../../Foundation/colors';
+
+.bazarButton-Container {
+    text-decoration: none !important;
+}
+.bazarButton {
+    width: 180px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    color: $white-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &-Text {
+        margin: 0;
+    }
+}

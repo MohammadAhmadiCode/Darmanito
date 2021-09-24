@@ -1,0 +1,127 @@
+@import '../../Foundation/colors';
+
+// Support : 
+
+.support {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue-color;
+    height: 130px;
+    width: 100%;
+    margin: 0 0 85px 0;
+    &-Text {
+        display: flex;
+        gap: 1rem;
+        direction: rtl;
+        color: $white-color;
+        padding: 50px 140px 52px 0;
+        &-Texts {
+            margin: 0;
+        }
+        &-Title {
+            margin: 0;
+        }
+    }
+    &-Button {
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 52px;
+        border-radius: 10px;
+        border: none;
+        background-color: $epiBlue-color;
+        cursor: pointer;
+        margin: 40px 0 40px 140px;
+        & :focus {
+            outline: none;
+        }
+        &-Image {
+            width: 24px;
+            height: 26.2px;
+        }
+        &-Text {
+            margin: 0;
+            &-Texts,
+            &-Texts:hover {
+                color: $white-color !important;
+                text-decoration: none;
+                margin: 0 1rem 0 0;
+            }
+        }
+    }
+}
+
+// Responsive Mode :
+
+
+@media(min-width:1000px) and (max-width:1250px) {
+
+    .support {
+        &-Text {
+            padding: 50px 70px 52px 0;
+        }
+        &-Button {
+            margin: 40px 0 40px 70px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:280px) and (max-width:1000px) {
+
+    .support {
+        flex-direction: column;
+        height: 170px;
+        &-Text {
+            display: contents;
+            &-Title {
+                padding: 20px 0 0 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            &-Texts {
+                font-size: 12px;
+            }
+        }
+        &-Button {
+            width: 260px;
+            height: 52px;
+            margin: 15px 0 18px 0px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:0px) and (max-width:280px) {
+
+    .support {
+        flex-direction: column;
+        height: 170px;
+        &-Text {
+            display: contents;
+            &-Title {
+                padding: 20px 0 0 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            &-Texts {
+                font-size: 10px;
+            }
+        }
+        &-Button {
+            width: 200px;
+            height: 52px;
+            margin: 15px 0 18px 0px;
+            &-Image {
+                display: none;
+            }
+        }
+    }
+}

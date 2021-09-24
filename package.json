@@ -1,0 +1,49 @@
+{
+  "name": "darmanito",
+  "homepage": "https://MohammadAhmadiCode.github.io/Darmanito-React-App-Project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.1.10",
+    "iframe": "^1.0.0",
+    "iframe-react": "^1.0.1",
+    "mdbootstrap": "^4.20.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.3",
+    "react-dom": "^17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-neshan-map-leaflet": "^1.2.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^4.0.3",
+    "short-id": "0.1.0-1",
+    "styled-components": "^5.3.1",
+    "tachyons": "^4.12.0",
+    "tachyons-cli": "^1.3.3",
+    "yup": "^0.31.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
